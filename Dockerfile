@@ -7,7 +7,7 @@ RUN apk add --no-cache python3-dev py3-pip gcc musl-dev
 RUN python -m venv /app/venv
 
 ENV PATH="/app/venv/bin:$PATH"
-ENV PYTHONUNBUFFERED=1
+ENV PYTHONUNBUFFERED=1 
 
 # Копируем весь проект (pyproject.toml, src/, tests/, etc.)
   
