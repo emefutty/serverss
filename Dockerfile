@@ -10,6 +10,7 @@ ENV PATH="/app/venv/bin:$PATH"
 ENV PYTHONUNBUFFERED=1
 
 # Копируем весь проект (pyproject.toml, src/, tests/, etc.)
+  
 COPY . /app
 
 RUN pip install --no-cache-dir --upgrade pip && \
